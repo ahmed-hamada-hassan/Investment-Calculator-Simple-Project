@@ -1,59 +1,62 @@
-# InvestmentCalculatorProject
+# 📈 Investment Calculator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+![Investment Calculator Banner](./public/banner.png)
 
-## Development server
+## 🌟 Overview
+A professional, modern, and user-friendly **Investment Calculator** built with **Angular**. This application helps users estimate their wealth growth over time by calculating annual profits, total interest, and total capital based on initial investments and ongoing contributions.
 
-To start a local development server, run:
+## ✨ Features
+- **Real-time Calculations**: Instant results as you input your data.
+- **Detailed Breakdown**: Year-by-year analysis of your investment growth.
+- **Responsive Design**: Works seamlessly on desktops, tablets, and mobile devices.
+- **User-Friendly Interface**: Clean and intuitive UI for effortless financial planning.
+- **Comprehensive Results**: Track annual profit, total interest earned, and total invested capital.
 
+## 🛠️ Technologies Used
+- **Angular**: Framework for building the dynamic web application.
+- **TypeScript**: Ensuring type safety and robust code logic.
+- **CSS3**: Custom styling for a premium and professional look.
+- **HTML5**: Semantic structure for better accessibility.
+
+## 🚀 Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://angular.dev/tools/cli) installed.
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ahmed-hamada-hassan/Investment-Calculator-Simple-Project.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd Investment-Calculator-Simple-Project
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+To start the development server, run:
 ```bash
 ng serve
 ```
+Open your browser and navigate to `http://localhost:4200/`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📊 How It Works
+1. **Initial Investment**: The starting amount of money.
+2. **Annual Contribution**: How much you add to the investment each year.
+3. **Expected Return**: The annual percentage of profit you expect.
+4. **Duration**: How many years you plan to keep the investment.
 
-## Code scaffolding
+The calculator then generates a table showing your progress year by year!
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🤝 Contributing
+Contributions are welcome! If you have any ideas to improve this project, feel free to fork the repo and create a pull request.
 
-```bash
-ng generate component component-name
-```
+## 📜 License
+This project is licensed under the MIT License.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Developed with ❤️ by [Ahmed Hamada](https://github.com/ahmed-hamada-hassan)

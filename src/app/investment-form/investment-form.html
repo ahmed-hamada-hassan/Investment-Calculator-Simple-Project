@@ -1,0 +1,98 @@
+<div class="calculator-container">
+  <form class="investment-card" #investmentForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="card-header">
+      <i class="fa-solid fa-money-bill-trend-up"></i>
+      <h2>Investment <span>Calculator</span></h2>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="initialInvestment">Initial Investment</label>
+        <div class="input-wrapper">
+          <span class="currency">$</span>
+          <input
+            type="number"
+            id="initialInvestment"
+            name="initialInvestment"
+            [(ngModel)]="enteredInitialInvestment"
+            required
+            min="100"
+            step="any"
+            placeholder="0.00"
+            #initialInvestment="ngModel"
+          />
+        </div>
+        @if (initialInvestment.invalid && initialInvestment.touched) {
+          <small class="error-text">Min. investment $100</small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="annualContribution">Annual Contribution</label>
+        <div class="input-wrapper">
+          <span class="currency">$</span>
+          <input
+            type="number"
+            id="annualContribution"
+            name="annualContribution"
+            [(ngModel)]="enteredAnnualContribution"
+            required
+            min="50"
+            step="any"
+            placeholder="0.00"
+            #annualContribution="ngModel"
+          />
+        </div>
+        @if (annualContribution.invalid && annualContribution.touched) {
+          <small class="error-text">Min. contribution $50</small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="investmentDuration">Duration (Years)</label>
+        <div class="input-wrapper">
+          <input
+            type="number"
+            id="investmentDuration"
+            name="investmentDuration"
+            [(ngModel)]="enteredInvestmentDuration"
+            required
+            min="1"
+            max="25"
+            placeholder="1-25"
+            #investmentDuration="ngModel"
+          />
+          <span class="unit">Yrs</span>
+        </div>
+        @if (investmentDuration.invalid && investmentDuration.touched) {
+          <small class="error-text">Duration 1-25 years</small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="expectedReturn">Expected Return</label>
+        <div class="input-wrapper">
+          <input
+            type="number"
+            id="expectedReturn"
+            name="expectedReturn"
+            [(ngModel)]="enteredExpectedReturn"
+            required
+            min="0"
+            max="100"
+            placeholder="0%"
+            #expectedReturn="ngModel"
+          />
+          <span class="unit">%</span>
+        </div>
+        @if (expectedReturn.invalid && expectedReturn.touched) {
+          <small class="error-text">Rate 0-100%</small>
+        }
+      </div>
+    </div>
+
+    <button type="submit" class="calculate-btn" [disabled]="investmentForm.invalid">
+      Calculate ROI <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </form>
+</div>

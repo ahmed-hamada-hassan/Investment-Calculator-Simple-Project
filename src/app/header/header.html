@@ -1,0 +1,24 @@
+<header class="modern-header">
+  <div class="header-left">
+    <div class="logo-container">
+      <img src="header_img.png" alt="Investment Calculator" />
+    </div>
+    <div class="brand-text">
+      <h1>Investment <span>Calculator</span></h1>
+      <p>Grow Your Wealth</p>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" (change)="toggleTheme()" [checked]="isDarkMode()" />
+        <div class="slider">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+          <div class="ball"></div>
+        </div>
+      </label>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,124 @@
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  width: 53px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  border-radius: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+.ball {
+  background-color: #fff;
+  bottom: 4px;
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* أنيميشن فيه ارتداد خفيف واحترافي */
+  width: 20px;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 14px;
+  user-select: none;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #3a3a3a;
+}
+
+input:checked + .slider .ball {
+  transform: translateX(26px);
+}
+
+input:checked + .slider .sun {
+  opacity: 0.3;
+}
+
+input:not(:checked) + .slider .moon {
+  opacity: 0.3;
+}
+
+.modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--header-bg);
+  border-radius: 50px;
+  margin: 20px;
+  box-shadow: 0 2px 28px 0 rgba(16, 185, 129, 0.3);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-container {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #10b981; /* إطار أخضر بلون الدولار */
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.brand-text h1 {
+  font-size: 22px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brand-text h1 span {
+  color: #10b981; /* Emerald Green */
+}
+
+.brand-text p {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+<div class="results-container">
+  @if (!results()) {
+    <div class="no-data-card">
+      <p>Enter your financial goals above and click calculate to see your wealth forecast. 💰</p>
+    </div>
+  } @else {
+    <div class="table-wrapper">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Investment Value</th>
+            <th>Interest (Year)</th>
+            <th>Total Interest</th>
+            <th>Invested Capital</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of results(); track row.year) {
+            <tr>
+              <td class="year-cell">{{ row.year }}</td>
+              <td class="value-cell">{{ row.endValue | currency }}</td>
+              <td>{{ row.annualProfit | currency }}</td>
+              <td class="profit-cell">{{ row.totalProfit | currency }}</td>
+              <td>{{ row.totalCapital | currency }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

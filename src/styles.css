@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+/* --- الألوان الافتراضية للموقع (Light Mode) --- */
+:root {
+  --bg-color: #f4fbf7; /* خلفية مريحة جداً مائلة للأخضر العشبي الخفيف */
+  --text-color: #115e59; /* لون نصوص أخضر داكن (Teal/Emerald غامق) عشان التباين */
+  --header-bg: rgba(255, 255, 255, 0.85); /* كارت أبيض ناصع مع تفعيل الشفافية */
+  --border-color: rgba(16, 185, 129, 0.25); /* حدود خضراء خفيفة */
+  --input-bg: #ffffff; /* خلفية الـ Inputs بيضاء صريحة في اللايت مود */
+  --shadow-color: rgba(16, 185, 129, 0.08); /* ضل أخضر خفيف وناعم */
+}
+
+/* --- الألوان لما كلاس dark-theme ينضاف للـ body --- */
+body.dark-theme {
+  --bg-color: #022c22; /* خلفية زيتوني غامق جداً (Dark Emerald) */
+  --text-color: #f0fdf4; /* نصوص فاتحة مائلة للأخضر */
+  --header-bg: rgba(6, 78, 59, 0.7); /* كارت زجاجي داكن */
+  --border-color: rgba(52, 211, 153, 0.2);
+  --input-bg: rgba(255, 255, 255, 0.05); /* خلفية الـ Inputs داكنة وشفافة */
+  --shadow-color: rgba(0, 0, 0, 0.3); /* ضل أسود قوي عشان يبان في الدارك مود */
+}
+
+/* --- الاستايل العام للصفحة والـ body --- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  /* لمتصفحات Chrome و Safari */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* لمتصفح Firefox */
+  scrollbar-width: none;
+
+  /* لمتصفح IE */
+  -ms-overflow-style: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.theme-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: inherit;
+}

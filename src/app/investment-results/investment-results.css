@@ -1,0 +1,89 @@
+.results-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0; /* خلي المارجن صفر لأن الـ main-layout هو اللي بيدير المسافات دلوقتي */
+  padding: 0;
+}
+
+/* كارت الرسالة في البداية */
+.no-data-card {
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-weight: 500;
+  box-shadow: 0 10px 25px var(--shadow-color);
+}
+
+/* حاوية الجدول لضمان الاسكرول على الموبايل */
+.table-wrapper {
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 15px 35px var(--shadow-color);
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.results-table th {
+  background: rgba(16, 185, 129, 0.15); /* درجات الأخضر للعنوان */
+  color: #10b981;
+  padding: 16px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.results-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  font-variant-numeric: tabular-nums; /* بتخلي الأرقام تحت بعض بالملي */
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* تأثير عند تمرير الماوس */
+.results-table tbody tr:hover {
+  background: rgba(16, 185, 129, 0.04);
+}
+
+/* ألوان مميزة للخانات المهمة */
+.year-cell {
+  font-weight: bold;
+  color: #10b981;
+}
+
+.value-cell {
+  font-weight: 600;
+}
+
+.profit-cell {
+  color: #10b981;
+  font-weight: 500;
+}
+
+/* استجابة الموبايل الصغير */
+@media (max-width: 600px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  .results-table th,
+  .results-table td {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+}

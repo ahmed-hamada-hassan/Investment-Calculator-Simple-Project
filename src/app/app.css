@@ -1,0 +1,20 @@
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* عشان يترصوا من البداية فوق لو الجدول طويل */
+  gap: 30px; /* مسافة محترمة بين الفورم والجدول */
+  padding: 40px 20px;
+  max-width: 1400px; /* أقصى عرض مسموح بيه عشان ميبعدوش عن بعض في الشاشات الواسعة جداً */
+  margin: 0 auto; /* لتوسيط الحاوية كلها في نص الشاشة */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* استجابة الشاشات (Responsive Design) */
+@media (max-width: 1100px) {
+  .main-layout {
+    flex-direction: column; /* أول ما الشاشة تصغر عن 1100 بكسل ينزلوا تحت بعض */
+    align-items: center; /* يتوسطوا تحت بعض */
+    gap: 20px;
+  }
+}

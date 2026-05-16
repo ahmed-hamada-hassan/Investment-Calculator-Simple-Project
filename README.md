@@ -1,62 +1,77 @@
 # 📈 Investment Calculator
 
-![Investment Calculator Banner](./public/banner.png)
+<p align="center">
+  <img src="./public/banner.png" alt="Investment Calculator Banner" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
+
+---
 
 ## 🌟 Overview
-A professional, modern, and user-friendly **Investment Calculator** built with **Angular**. This application helps users estimate their wealth growth over time by calculating annual profits, total interest, and total capital based on initial investments and ongoing contributions.
+**Investment Calculator** is a high-performance web application built with **Angular** that empowers users to visualize their long-term financial growth. Whether you're planning for retirement or just curious about the power of compound interest, this tool provides a clear, data-driven roadmap for your financial future.
 
-## ✨ Features
-- **Real-time Calculations**: Instant results as you input your data.
-- **Detailed Breakdown**: Year-by-year analysis of your investment growth.
-- **Responsive Design**: Works seamlessly on desktops, tablets, and mobile devices.
-- **User-Friendly Interface**: Clean and intuitive UI for effortless financial planning.
-- **Comprehensive Results**: Track annual profit, total interest earned, and total invested capital.
+## ✨ Key Features
+- 🚀 **Real-time Engine**: Instantly recalculates results as you adjust your investment parameters.
+- 📊 **Dynamic Visualization**: A clean, tabulated breakdown of your investment's year-over-year progress.
+- 📱 **Fully Responsive**: Optimized for a premium experience across all devices, from mobile to ultra-wide monitors.
+- 🎨 **Modern UI/UX**: Designed with a focus on simplicity, elegance, and user engagement.
+* 💰 **Comprehensive Metrics**: Track Annual Profit, Total Interest, and Accumulated Capital with precision.
 
-## 🛠️ Technologies Used
-- **Angular**: Framework for building the dynamic web application.
-- **TypeScript**: Ensuring type safety and robust code logic.
-- **CSS3**: Custom styling for a premium and professional look.
-- **HTML5**: Semantic structure for better accessibility.
+## 🛠️ Tech Stack
+- **Framework**: [Angular](https://angular.io/) (Latest Version)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: Vanilla CSS with modern Flexbox/Grid layouts
+- **Icons**: Emoji & SVG for a lightweight, fast-loading experience
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://angular.dev/tools/cli) installed.
+Ensure you have the following installed on your machine:
+* [Node.js](https://nodejs.org/) (v18.x or higher)
+* [Angular CLI](https://angular.io/cli)
 
-### Installation
+### Installation & Local Development
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ahmed-hamada-hassan/Investment-Calculator-Simple-Project.git
    ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd Investment-Calculator-Simple-Project
-   ```
-3. **Install dependencies:**
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-### Running the Application
-To start the development server, run:
-```bash
-ng serve
-```
-Open your browser and navigate to `http://localhost:4200/`.
+3. **Launch the app:**
+   ```bash
+   ng serve --open
+   ```
+   Navigate to `http://localhost:4200/` to see the application in action!
 
-## 📊 How It Works
-1. **Initial Investment**: The starting amount of money.
-2. **Annual Contribution**: How much you add to the investment each year.
-3. **Expected Return**: The annual percentage of profit you expect.
-4. **Duration**: How many years you plan to keep the investment.
-
-The calculator then generates a table showing your progress year by year!
+## 📊 Investment Parameters Explained
+* **Initial Investment**: The base amount you start with.
+* **Annual Contribution**: The fixed amount you plan to add every year.
+* **Expected Return**: Your estimated annual percentage yield (APY).
+* **Investment Duration**: The total number of years you plan to hold the investment.
 
 ## 🤝 Contributing
-Contributions are welcome! If you have any ideas to improve this project, feel free to fork the repo and create a pull request.
+We love contributions! If you'd like to improve the calculator, please follow these steps:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📜 License
-This project is licensed under the MIT License.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-Developed with ❤️ by [Ahmed Hamada](https://github.com/ahmed-hamada-hassan)
+<p align="center">
+  Developed with ❤️ by <a href="https://github.com/ahmed-hamada-hassan">Ahmed Hamada</a>
+</p>
